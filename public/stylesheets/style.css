@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+:root {
+    --primary-color: #fff;
+    --primary-color-hover: #ccc;
+    --secondary-color: #ffc107;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lobster Two', cursive !important;
+    background: #000 !important;
+}
+
+nav ul a {
+    color: #eee;
+}
+
+header nav a:hover {
+    color: var(--primary-color);
+}
+
+header .changing-text {
+    transition: transform .5s;
+}
+
+header section .slantLine {
+    max-width: 150px;
+    height: 5px;
+    border-radius: 28px;
+    transform: rotate3d(1, 1, 1, -0.03turn);
+}
+
+header section img {
+    height: 400px !important;
+    max-width: 300px;
+}
+
+li {
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+    header section .slantLine {
+        max-width: 180px;
+    }
+}
