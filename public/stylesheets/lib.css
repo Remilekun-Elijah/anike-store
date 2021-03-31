@@ -678,19 +678,14 @@ footer {
     background-color: rgba(186, 59, 108, 1) !important;
 }
 
-audio,
-video {
-    outline: none;
-}
-
-video {
-    background: #333;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
 
 /* @media (min-width: 78) */
+
+@media only screen and (max-width: 991.97px) {
+    .text-50 {
+        font-size: 40px !important;
+    }
+}
 
 @media only screen and (max-width: 767px) {
     .w-sm-100-lib {
@@ -707,13 +702,10 @@ video {
         margin-top: 0 !important;
     }
     .text-50 {
-        font-size: 40px !important;
+        font-size: 35px !important;
     }
     .text-40 {
         font-size: 30px !important;
-    }
-    .text-45 {
-        font-size: 35px !important;
     }
     .text-35 {
         font-size: 30px !important;
@@ -722,7 +714,10 @@ video {
         font-size: 25px !important;
     }
     .text-25 {
-        font-size: 23px
+        font-size: 20px !important;
+    }
+    .text-23 {
+        font-size: 18px
     }
     .mb-sm-10 {
         margin-bottom: 10em !important;
@@ -739,17 +734,20 @@ video {
     .mb-sm-1 {
         margin-bottom: 1em !important;
     }
-    .home-footer {
-        margin-top: 1100px !important;
-    }
 }
 
 @media only screen and (max-width: 575.98px) {
     .text-50 {
-        font-size: 40px !important;
+        font-size: 35px !important;
     }
     .text-40 {
         font-size: 30px !important;
+    }
+    .text-30 {
+        font-size: 20px !important;
+    }
+    .text-xs-center-lib {
+        text-align: center;
     }
     /* .text-35 {
         font-size: 25px !important;
@@ -763,9 +761,6 @@ video {
     .px-xs-5 {
         padding-right: 10px;
         padding-left: 10px;
-    }
-    .songs-bg-img .caption {
-        text-align: center;
     }
 }
 

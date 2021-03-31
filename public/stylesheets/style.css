@@ -10,12 +10,18 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     font-family: 'Lobster Two', cursive !important;
-    background: #000 !important;
 }
 
 nav ul a {
     color: #eee;
+}
+
+header {
+    position: relative;
+    overflow-x: hidden;
+    background: #000 !important;
 }
 
 header nav a:hover {
@@ -42,8 +48,53 @@ li {
     color: var(--primary-color);
 }
 
+#blob {
+    top: 30%;
+    position: absolute;
+    right: -10px;
+    width: 130px;
+    border-radius: 100%;
+    /* animation-name: roll;
+    animation-duration: 100s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards; */
+    /* z-index: -1; */
+    animation: roll 10s infinite linear;
+}
+
+main {
+    background: #fff;
+    border-radius: 50px 50px 0 0;
+    height: 100px;
+    position: relative;
+    margin-top: -50px;
+}
+
+.bitmoji {
+    position: absolute;
+    left: 120px;
+    top: 290px;
+    width: 300px;
+    transform: rotate(-10deg);
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @media screen and (min-width: 768px) {
     header section .slantLine {
         max-width: 180px;
     }
+    #blob {
+        top: 13%;
+    }
 }
+
+@media screen and (max-width: 767.97px) {}

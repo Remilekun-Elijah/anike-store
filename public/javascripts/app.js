@@ -3,7 +3,7 @@ $(function() {
     setInterval(() => {
         let text = $(".changing-text span").text();
         if (text == "Jewelries") text = "Footwears";
-        else if (text == "Footwears") text = "Clothes";
+        else if (text == "Footwears") text = "Clothings";
         else text = "Jewelries";
         fader($(".changing-text"), { html: `<span>${text}</span>`, duration: 400, allowCss: true })
 
@@ -12,10 +12,16 @@ $(function() {
         let img = document.querySelector(".img-con img");
         setTimeout(() => {
 
-            if (img.src.includes("images/gold.png")) img.src = "images/gold plated.png";
-            else if (img.src.includes("images/gold plated.png")) img.src = "images/gown.jpg";
-            else img.src = "images/gold.png";
-            console.log(img.src);
+            if (img.src.includes("images/gold.png")) {
+                img.alt = "Ladies hills footware";
+                img.src = "images/foot.jpg";
+            } else if (img.src.includes("images/foot.jpg")) {
+                img.alt = "Long gown";
+                img.src = "images/gown.png";
+            } else {
+                img.src = "images/gold.png";
+                img.alt = "Gold chain on a black ornament";
+            }
         }, 400);
         fader($(".img-con"), { html: img, duration: 400 });
     }, 4000);
