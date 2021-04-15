@@ -1,4 +1,11 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+body {
+    font-family: 'Philosopher', Georgia, Cursive, sans-serif;
+}
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
 }
@@ -50,7 +57,7 @@
 }
 
 .bg-black {
-    background-color: #000;
+    background-color: #000 !important;
     color: #fff
 }
 
@@ -545,9 +552,9 @@
 }
 
 .btn-black:hover {
-    background-color: #fff;
-    color: #000;
-    transition: all .4s
+    background-color: #222;
+    color: #fff;
+    /* transition: all .4s */
 }
 
 .btn-white {
@@ -745,6 +752,9 @@ footer {
     }
     .text-30 {
         font-size: 20px !important;
+    }
+    .text-20 {
+        font-size: 17px !important
     }
     .text-xs-center-lib {
         text-align: center;

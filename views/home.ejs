@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="No.1 best seller of clothings and accessories">
+
+    <link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- <link href="/stylesheets/bootstrap-grid.css" rel="stylesheet" type="text/css"> -->
+
+    <link rel='stylesheet' href='/stylesheets/lib.css' />
+
+    <link rel='stylesheet' type="text/css" href='/stylesheets/style.css' />
+
+    <link rel='stylesheet' type="text/css" href='/stylesheets/home.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="widehomeheader">
+        <%- include("../templates/usernav")%>
+            <div class="container bg">
+                <div class="slide active one">
+                    <div class="slides d-flex align-items-center">
+                        <div class="imgs">
+                            <img src="/images/gown2.png" alt="" srcset="" style="height: 250px;">
+                            <img src="/images/bg/men.png" alt="" srcset="">
+                            <img src="/images/bg/kid.png" alt="" srcset="" style="width: 250px;">
+                        </div>
+                        <div class="text ms-5 text-white">
+                            <h2 class=""> Choose your clothes</h2>
+                            <h3>from adults to kids wears</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="slide next two">
+                    <div class="slides d-flex align-items-center">
+                        <div class="imgs">
+                            <img src="/images/pixiu-ring.png" alt="" srcset="" style="height: 200px;">
+                            <img src="/images/ring2.png" alt="" srcset="">
+                            <img src="/images/ring1.png" alt="" srcset="" style="height: 200px; ">
+                        </div>
+                        <div class="text ms-5 text-white">
+                            <h2 class=""> Wedding just got better</h2>
+                            <h3>pick the right fit for your spouce</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="slide next three">
+                    <div class="slides d-flex align-items-center">
+                        <div class="imgs">
+                            <img src="/images/foot.jpg" alt="" srcset="" style="height: 250px;">
+                            <img src="/images/boot.png" alt="" srcset="" style="height: 230px;">
+                            <img src="/images/kids.png" alt="" srcset="" style="width: 220px; height: 230px;">
+                        </div>
+                        <div class="text ms-5 text-white">
+                            <h2 class=""> Footwares classified</h2>
+                            <h3>from adults to kids wears</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </header>
+    <main style="height: 44vh !important;">
+        <h1 class="text-center mt-5">Welcome home </h1>
+    </main>
+
+    <%- include("../templates/footer")%>
+        </main>
+        <script src="javascripts/jquery.min.js"></script>
+        <!-- <script src="javascripts/app.js"></script> -->
+        <script src="javascripts/bootstrap.bundle.min.js"></script>
+
+        <script>
+            function tag(e) {
+                return document.querySelector(e)
+            }
+
+            let f = '',
+                l = '',
+                arr = [];
+            setInterval(() => {
+
+                f = tag(".bg .active");
+                f.classList.replace("active", 'prev');
+                // arr.push(f);
+                l = tag(".bg .next");
+                arr.push(f);
+                l.classList.replace("next", 'active');
+                console.log(f, l);
+
+                setTimeout(() => {
+                        f.remove();
+                        arr[0].classList.replace('prev', 'next');
+                        tag('.bg').appendChild(arr[0]);
+                        console.log(arr);
+                        arr.pop();
+
+                        console.log(arr);
+                    }, 1000)
+                    // tag(".s0").style.transform = 'translateX(-100%)'
+
+            }, 3000)
+        </script>
+
+
+</body>
+
+</html>

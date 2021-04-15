@@ -11,59 +11,38 @@
     <meta name="description" content="No.1 best seller of clothings and accessories">
 
     <link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="/stylesheets/bootstrap-grid.css" rel="stylesheet" type="text/css">
+    <!-- <link href="/stylesheets/bootstrap-grid.css" rel="stylesheet" type="text/css"> -->
 
-    <link rel='stylesheet' type="text/css" href='/stylesheets/style.css' />
     <link rel='stylesheet' href='/stylesheets/lib.css' />
-
+    <link rel='stylesheet' type="text/css" href='/stylesheets/style.css' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 
 <body>
-    <header style="padding-bottom: 150px;">
+    <header style="padding-bottom: 150px;" id="index-header">
 
-        <nav class="ps-lg-5 navbar navbar-expand-md navbar-dark shadow">
-            <div class="container">
-                <a class="text-35 navbar-brand white-text " href="/">
-                    Anike Store
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-                <div class="collapse justify-content-end  navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav text-white ms-sm-5">
+        <%- include("../templates/navbar")%>
+            <img class="img-fluid" src="images/blob.png" alt="Gold chain on a black ornament" srcset=" " id="blob">
+            <section class="container mt-5">
+                <div class="row align-items-center d-flex mx-auto justify-content-center">
+                    <div class="col-sm-5">
+                        <h1 class="light-text d-inline text-50"> Your no.1 best seller of all kinds of product ranging from and not limited to <span class="d-flex flex-column "><strong class="text-warning changing-text"><span>Jewelries</span></strong> <span class="slantLine bg-warning "></span></span>
+                        </h1>
+                    </div>
+                    <div class="justify-content-center  col-sm-5 mt-small-3 mt-5 mt-sm-0 ms-sm-5 img-con">
+                        <img class="img-flui" src="images/gold.png" alt="Gold chain on a black ornament" srcset=" ">
 
-                        <li class="nav-item text-24">
-                            <a class="text-decoration-none nav-list " aria-current="page" href="#">Sign in</a>
-                        </li>
-                        <li class="nav-item text-24">
-                            <a class="text-decoration-none nav-list white-text" href="/about">About</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <img class="img-fluid" src="images/blob.png" alt="Gold chain on a black ornament" srcset=" " id="blob">
-        <section class="container mt-5">
-            <div class="row align-items-center d-flex mx-auto justify-content-center">
-                <div class="col-sm-5">
-                    <h1 class="light-text d-inline text-50"> Your no.1 best seller of all kinds of product ranging from and not limited to <span class="d-flex flex-column "><strong class="text-warning changing-text"><span>Jewelries</span></strong> <span class="slantLine bg-warning "></span></span>
-                    </h1>
-                </div>
-                <div class="justify-content-center  col-sm-5 mt-small-3 mt-5 mt-sm-0 ms-sm-5 img-con">
-                    <img class="img-flui" src="images/gold.png" alt="Gold chain on a black ornament" srcset=" ">
+                    </div>
+
 
                 </div>
 
 
-            </div>
-
-
-        </section>
+            </section>
     </header>
-    <main class="pb-5">
+    <main class="pb-5" id="indexpagemain">
         <section class="pb-5">
-            <div class="text-center">
+            <div class="text-center px-3">
                 <h1 style="padding-top: 2em;" class="text-40">We have what you need</h1>
                 <p class="text-25">Whether men or women accessories, we have them.</p>
             </div>
@@ -73,16 +52,16 @@
                 <div class="col-sm-5 text-xs-center-lib mt-5 mt-sm-0">
                     <h3 class="text-35">Create an account</h3>
                     <p class="text-25">New user ? not to worry you can get started by creating an account with us to enjoy our amazing offers that awaits you.</p>
-                    <button class="btn btn-warning w-50 text-20 ">Sign up</button>
+                    <a href='/user/new' class="btn btn-warning w-50 text-20 ">Sign up</a>
                 </div>
             </div>
         </section>
 
-        <section class=" px-5 py-5 mt-0" style="background-color: #eee; ">
+        <section class=" px-5 py-5 mt-0" id="products" style="background-color: #eee; ">
             <h1 class="text-center"> Our Product at a glance</h1>
 
-            <div class="row justify-content-around">
-                <div class="card col-sm-6 col-lg-3 mt-5  " style="border-radius: 15px !important; ">
+            <div class="row justify-content-around ">
+                <div class="card col-sm-3 col-lg-3 col-xl-3 col-xxl-2 mt-5 col-5" style="border-radius: 15px !important;">
                     <div class="card-img">
                         <img src="images/ring2.png" style="width:100%" alt="" srcset="">
                     </div>
@@ -90,7 +69,7 @@
                         <h4 class="card-title"> Curvy Steel Ring</h4>
                         <div class="flex flex-row ">
                             <h6 class="mr-5">Category:</h6>
-                            <p>Mens > Jewelries</p>
+                            <p class="p-mobile">Mens > Jewelries</p>
 
                         </div>
                         <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star-half-alt  text-warning"></i>
@@ -101,7 +80,7 @@
                     </div>
                 </div>
 
-                <div class="card col-sm-6 col-lg-3 mt-5  " style="border-radius: 15px !important; ">
+                <div class="card col-sm-3 col-5 col-lg-3 col-xl-3 col-xxl-2 mx-xl-1 mx-xxl- mx-1 mt-5 col-5" style="border-radius: 15px !important; ">
                     <div class="card-img">
                         <img src="images/ring1.png" style="width:100%" alt="" srcset="">
                     </div>
@@ -109,7 +88,7 @@
                         <h4 class="card-title"> Twin Steel Ring</h4>
                         <div class="flex flex-row ">
                             <h6 class="mr-5">Category:</h6>
-                            <p>Women > Jewelries</p>
+                            <p class="p-mobile">Women > Jewelries</p>
 
                         </div>
                         <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star  text-warning"></i>
@@ -121,7 +100,7 @@
                 </div>
 
 
-                <div class="card col-sm-6 col-lg-3 mt-5  " style="border-radius: 15px !important; ">
+                <div class="card col-5 col-sm-3 col-lg-3 col-xl-3 col-xxl-2 mx-xl-0 col-5 mt-5  " style="border-radius: 15px !important; ">
                     <div class="card-img">
                         <img src="images/pixiu-ring.png" style="width:100%" alt="" srcset="">
                     </div>
@@ -129,7 +108,7 @@
                         <h4 class="card-title"> Pixiu Ring</h4>
                         <div class="flex flex-row ">
                             <h6 class="mr-5">Category:</h6>
-                            <p>Mens > Jewelries</p>
+                            <p class="p-mobile">Men > Jewelries</p>
 
                         </div>
                         <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-star  text-warning"></i>
@@ -139,19 +118,16 @@
                         <button class="btn btn-warning w-100 text-20">Add to cart</button>
                     </div>
                 </div>
-            </div>
 
-
-            <div class="row justify-content-around mt-5 mb-5">
-                <div class="card col-sm-6 col-lg-3 mt-5  " style="border-radius: 15px !important; ">
+                <div class="card col-sm-6 col-5 col-lg-3 col-xl-3 col-xxl-2  mt-5" style="border-radius: 15px !important; ">
                     <div class="card-img">
                         <img src="images/menhood.png" style="width:100%;" alt="" srcset="">
                     </div>
                     <div class="card-body borde border-top ">
                         <h4 class="card-title">Men Hood</h4>
                         <div class="flex flex-row">
-                            <h6 class="mr-5">Category:</h6>
-                            <p>Mens > Clothings</p>
+                            <h6 class="mr-5 ">Category:</h6>
+                            <p class="p-mobile">Men > Clothings</p>
 
                         </div>
                         <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star-half-alt  text-warning"></i>
@@ -162,7 +138,7 @@
                     </div>
                 </div>
 
-                <div class="card col-sm-6 col-lg-3 mt-5  " style="border-radius: 15px !important; ">
+                <div class="card col-sm-6 col-5 col-lg-3 col-xl-3 col-xxl-2 mx-xl-1 mx-xxl- mt-5  " style="border-radius: 15px !important; ">
                     <div class="card-img">
                         <img src="images/men.png" style="width:100%" alt="" srcset="">
                     </div>
@@ -170,7 +146,7 @@
                         <h4 class="card-title"> Italian Vigo</h4>
                         <div class="flex flex-row ">
                             <h6 class="mr-5">Category:</h6>
-                            <p>Men > Footwares</p>
+                            <p class="p-mobile">Men > Footwares</p>
 
                         </div>
                         <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star  text-warning"></i>
@@ -182,7 +158,7 @@
                 </div>
 
 
-                <div class="card col-sm-6 col-lg-3 mt-5  " style="border-radius: 15px !important; ">
+                <div class="card col-5 col-sm-6 col-lg-3 col-xl-3 col-xxl-2 mt-5  " style="border-radius: 15px !important; ">
                     <div class="card-img">
                         <img src="images/andromeda-neckalce.png" style="width:100%" alt="" srcset="">
                     </div>
@@ -190,7 +166,7 @@
                         <h4 class="card-title"> Andromeda Necklace</h4>
                         <div class="flex flex-row ">
                             <h6 class="mr-5">Category:</h6>
-                            <p>Womens > Necklace</p>
+                            <p class="p-mobile">Women > Necklaces</p>
 
                         </div>
                         <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-star  text-warning"></i>
@@ -204,35 +180,7 @@
         </section>
 
 
-
-        <footer class="bg-black text-center mt-0">
-            <div class="row container d-fle justify-content-center py-4 mx-auto ">
-                <div class="col-md-5 ">
-                    <h2 class="h1 ">About</h2>
-                    <p class="text-20 ">Anike Ologo, the official website. Our utmost priority is to serve our client to their taste, and also exceed their expectations in customer service. </p>
-                </div>
-                <div class="col-md-5 ">
-                    <h2 class="h1 ">Socials</h2>
-                    <div class="d-flex justify-content-center ">
-                        <a href="https://www.facebook.com/yowamusic " class="nav-link text-40 ">
-                            <i class="fab fa-facebook "></i>
-                        </a>
-                        <a href="https://www.instagram.com/yowa_music/ " class="nav-link text-40 ">
-                            <i class="fab fa-instagram "></i>
-                        </a>
-                        <a href="https://twitter.com/iamyowa " class="nav-link text-40 ">
-                            <i class="fab fa-twitter "></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class=" text-center ">
-                <p class="text-18 mb-1 "> &copy; 2021, all rights reserved.</p>
-                <p class="mb-0 pb-2 "> Built by <a class="text-decoration-none text-pink " href="mailto:remilekunelijah21997 ">Remilekun Elijah</a>.
-                </p>
-            </div>
-
-        </footer>
+        <%- include("../templates/footer")%>
     </main>
 
 

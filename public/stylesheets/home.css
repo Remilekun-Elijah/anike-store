@@ -1,0 +1,90 @@
+.widehomeheader {
+    background: #101010;
+    height: 400px;
+    overflow-x: hidden;
+}
+
+.slides img {
+    width: 200px;
+    height: 300px
+}
+
+.slides {
+    font-family: "Philosopher", 'Times New Roman', Times, serif;
+    padding-left: 20px;
+}
+
+.bg {
+    width: 90%;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.bg .slide {
+    /* overflow: hidden; */
+    width: 100%;
+    height: 326px;
+    position: absolute;
+    margin-top: 10px;
+    background-image: url('/images/bg/bg2.jpg');
+    background-position: bottom;
+    background-attachment: scroll;
+    /* filter: grayscale(2); */
+}
+
+.bg .one:nth-child(1) {
+    background-image: url('/images/bg/bg2.jpg');
+    background-position: center;
+}
+
+.bg .two {
+    background-image: url('/images/bg/bg4.jpg');
+    /* background-size: cover; */
+    background-position: bottom;
+}
+
+.bg .two:nth-child(1) {
+    background-image: url('/images/bg/bg3.jpg');
+    background-position: top;
+    /* background-size: cover; */
+}
+
+.bg .three {
+    background-image: url('/images/bg/bg-2.jpg');
+    background-position: top;
+    background-size: cover;
+}
+
+.bg .three:nth-child(1) {
+    background-image: url('/images/bg/bg-6.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.bg {
+    /* display: flex; */
+}
+
+.prev {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s cubic-bezier(1, 0, 0, 1);
+}
+
+.active {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 1s cubic-bezier(1, 0, 0, 1);
+}
+
+.next {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 1s cubic-bezier(1, 0, 0, 1);
+}
+
+
+/* .last {
+    transform: 'translateX(200%)';
+    opacity: 0; 
+}*/

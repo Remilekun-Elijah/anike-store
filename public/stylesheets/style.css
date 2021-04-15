@@ -11,17 +11,21 @@ html {
 
 body {
     overflow-x: hidden;
-    font-family: 'Lobster Two', cursive !important;
+    /* font-family: Tahoma, Georgia, cursive !important; */
 }
 
 nav ul a {
     color: #eee;
 }
 
+#index-header {
+    background: #000 !important;
+}
+
 header {
     position: relative;
     overflow-x: hidden;
-    background: #000 !important;
+    font-family: 'Lobster Two', cursive !important;
 }
 
 header nav a:hover {
@@ -54,16 +58,10 @@ li {
     right: -10px;
     width: 130px;
     border-radius: 100%;
-    /* animation-name: roll;
-    animation-duration: 100s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards; */
-    /* z-index: -1; */
     animation: roll 10s infinite linear;
 }
 
-main {
+#indexpagemain {
     background: #fff;
     border-radius: 50px 50px 0 0;
     height: 100px;
@@ -97,4 +95,34 @@ main {
     }
 }
 
-@media screen and (max-width: 767.97px) {}
+@media screen and (max-width: 575.97px) {
+    #products {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+    #products img {
+        max-height: 130px !important;
+    }
+    .card {}
+    .card-title {
+        font-size: 18px !important;
+    }
+    .card-body,
+    .card-footer {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .card-body .flex-row {
+        flex-direction: column !important;
+        font-size: 16px !important;
+    }
+    .card-footer {
+        font-size: 16px !important;
+    }
+    #products div {
+        /* display: block !important; */
+    }
+    .p-mobile {
+        font-size: 14px !important;
+    }
+}

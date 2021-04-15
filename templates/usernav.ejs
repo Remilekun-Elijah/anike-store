@@ -1,0 +1,49 @@
+<nav class="ps-lg- navbar py-0 bg-black navbar-expand-md navbar-dark shadow">
+    <div class="container-fluid py-0">
+        <a class="text-35 navbar-brand white-text " href="/">
+         Anike Store
+     </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+        <form action="/search" method="post" class="mt- py-0">
+            <div class="input-group">
+                <label for="search" class="form-label visually-hidden">Product</label>
+                <select class="input-group-text px-0 bg-pink border-0"><option class=" text-20 text-white" aria-hidden="true" selected value='All'>Category</option>
+                        <option value="Jewelries" class="px-0">Jewelries</option>
+                        <option value="Clothings" class="px-0 ">Clothings</option>
+                        <option value="Footwares" class="px-0 ">Footwares</option>
+                    </select>
+                <input type="search" name="search" class="form-control " id="search" placeholder="Name of product" required style="width:500px;">
+                <div class="input-group-text p- bg-pink border-0"><i class=" text-20 fas fa-search text-white" aria-hidden="true"></i></div>
+
+            </div>
+        </form>
+        <ul class="navbar-nav text-white ms-sm-5 ">
+            <div class="dropdown nav-item nav-list">
+                <button class="btn btn-black  fas fa-user text-decoration-none nav-list dropdown-toggle text-18" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                  Login
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark text-20" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item bg-pink active" href="#">Login</a></li>
+                    <li><a class="dropdown-item" href="#">Sign up</a></li>
+                    <!-- <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li> -->
+                    <!-- <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+                </ul>
+            </div>
+            <!-- <li class="nav-item text-24 ">
+                <a class=" fas fa-user text-decoration-none nav-list" aria-current="page" href="/user/new "> Guest</a>
+            </li> -->
+            <li class="nav-item text-22">
+                <a class="text-decoration- nav-list white-text" href="/help ">Help</a>
+            </li>
+            <li class="nav-item text-22">
+                <a class="text-decoration- nav-list white-text" href="/cart "> <i class="fas fa-cart-plus"></i> Cart</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
