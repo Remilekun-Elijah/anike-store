@@ -115,8 +115,20 @@ body {
     display: inline-block
 }
 
+.text-bold {
+    font-weight: bold !important;
+}
+
 
 /* Font Size */
+
+.text-14 {
+    font-size: 14px;
+}
+
+.text-15 {
+    font-size: 15px;
+}
 
 .text-16 {
     font-size: 16px
@@ -678,6 +690,16 @@ footer {
 .bg-pink:hover {
     color: white;
     background-color: rgba(186, 59, 108, 1) !important;
+}
+
+.bg-pink-focus {
+    color: white;
+    background-color: rgba(186, 59, 108, 1) !important;
+}
+
+.bg-pink-focus:hover {
+    color: white !important;
+    background-color: rgba(186, 59, 108, .8) !important;
 }
 
 .bg-pink:focus {

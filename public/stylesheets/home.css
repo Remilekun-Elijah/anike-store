@@ -88,3 +88,84 @@
     transform: 'translateX(200%)';
     opacity: 0; 
 }*/
+
+.aside {
+    /* padding-top: 2rem; */
+    width: 250px;
+    max-width: 300px;
+    border-right: 5px solid rgba(186, 59, 108, 1);
+    background: #fcfcfc;
+    height: 382px;
+}
+
+.aside ul li {
+    list-style: none;
+    color: black !important;
+    font-size: 18px;
+}
+
+.aside ul li:last-child {
+    border-bottom: 1px solid #eee;
+}
+
+.aside h4:nth-child(1) {
+    /* border-top: none; */
+}
+
+.aside h4 {
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* text-align: center; */
+    /* width: 45%; */
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#categories {
+    background: #fdfdfd;
+}
+
+#categories img {
+    width: 120px !important;
+    height: 160px !important;
+}
+
+.top-deals img,
+#best-selling img {
+    width: 150px !important;
+    height: 150px !important;
+}
+
+.top-deals .row .pb-2,
+#best-selling .row .pb-2 {
+    width: 290px !important
+}
+
+#best-selling .item {
+    position: relative;
+}
+
+#best-selling .item .label {
+    position: absolute;
+    top: 25px;
+    /* top: 1px; */
+    right: -8px !important;
+    /* right: 0; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0px;
+    /* border-top-left-radius: 24px;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 20px; */
+    transform: rotate(45deg);
+}
+
+#discount .discount img {
+    width: 150px !important;
+    /* height: 140px; */
+}
+
+#discount .gender img {
+    width: 110px !important;
+    height: 190px !important;
+}
